@@ -74,7 +74,7 @@ class advantage_air:
             return False
         async with self.lock:
             while self.changes:
-                await asyncio.sleep(10)
+                await asyncio.sleep(0)
                 payload = self.changes
                 self.changes = {}
                 try:
